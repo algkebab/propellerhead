@@ -86,22 +86,4 @@ public class CustomerDAO {
                 customer.getId().toString()});
     }
 
-//    @PostConstruct
-//    public void test() {
-//        List<Customer> customers = filter(null);
-//        for (Customer customer : customers) {
-//            template.update("UPDATE customers SET created=?, modified=? WHERE id=?", new Object[] {
-//                    dateFormat.format(new Date()),
-//                    dateFormat.format(new Date()),
-//                    customer.getId().toString()});
-//        }
-//
-//        List<CustomerNote> notes = template.query("SELECT * FROM customer_notes", new CustomerNoteMapper(dateFormat));
-//        for (CustomerNote note : notes) {
-//            template.update("UPDATE customer_notes SET created=?, modified=? WHERE id=?", new Object[] {
-//                    dateFormat.format(new Date()),
-//                    dateFormat.format(new Date()),
-//                    note.getId().toString()});
-//        }
-//    }
 }
